@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Sofadi+One&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --FONT-FAMILY : "Playwrite GB S", cursive;
+    --HEADER-COLOR : goldenrod;
+    --HEADER-FONT-WEIGHT: 400;
+    --FONT-STYLE: obique;
+}
+
+.side{
+    position: absolute;
+    top: 0;
+    background-color: #131819;
+    width: 250px;
+    height: 100%;
+}
+.side > h1{
+    color: var(--HEADER-COLOR);
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: var(--HEADER-FONT-WEIGHT);
+    font-style: var(--FONT-STYLE);
+    font-family: var(--FONT-FAMILY);
+
+}
+.side--section{
+    color: wheat;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 4em;
+    font-family: var(--FONT-FAMILY);
+    font-weight: 300;
+}
+
+svg{
+    width: 20px;
+    height: 50px;
+    color:#8e999b    ;
+    margin-top: 0.5rem;
+}
+
+svg:hover,
+:focus{
+    color: black;
+}
+.side--h1{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.side--h1{
+    display: inline-flex;
+    gap: 10px;
+    width: 75%;
+    padding-left: 0.5rem;
+    white-space: nowrap;
+}
+.side--h1:hover,:focus{
+    outline: 1px solid black;
+    border-width: 75%;
+    border-radius: 15px;
+    transition: transform 1s ease-in;
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+}
+.compliment{
+    color: var(--HEADER-COLOR);
+   text-decoration: wavy;
+   margin-top: 5em;
+   font-family: var(--FONT-FAMILY);
+   font-style: var(--FONT-STYLE);
+}
+
+ header{
+    margin-left: 20em;
+    margin-top: 2rem;
+ }
+header > h1{
+    font-weight: 400;
+    word-spacing: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home--boxes{
+    margin-left: 18em;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+}
+.home--box1{
+    background-color: rgb(255, 236, 236);
+    box-shadow: 1px 2px  2px rgb(241, 230, 230);
+    width: 80%;
+    border-radius: 5px;
+    color: black;
+    padding: 1rem;
+}
+.home--box1 > pre
+{
+    font-size: 1.4rem;
+    margin-left: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home--box1 > h1{
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home--box1:hover{
+    transition: 0.8s ease-in;
+   color: white;
+   background-color: black;
+}
