@@ -21,7 +21,7 @@ body{
     top: 0;
     background-color: #131819;
     width: 250px;
-    height: 50rem;
+    height: 55rem;
 }
 .side > h1{
     color: var(--HEADER-COLOR);
@@ -48,10 +48,12 @@ svg{
     color:#8e999b;
     margin-top: 0.5rem;
 }
+
 .side--h1{
     display: flex;
     gap: 10px;
     width: 100%;
+    margin-top: 2rem;
 }
 .side--h1{
     display: inline-flex;
@@ -61,10 +63,9 @@ svg{
     white-space: nowrap;
 }
 .side--h1:hover,:focus{
-    outline: 1px solid black;
     border-width: 75%;
     border-radius: 15px;
-    transition: transform 1s ease-in;
+    transition: transform 0.5s ease-in-out;
     transform: scale(1.1);
     color: black;
     background-color: white;
@@ -72,9 +73,16 @@ svg{
 .compliment{
     color: var(--HEADER-COLOR);
    text-decoration: wavy;
-   margin-top: 12em;
+   margin-top: 1em;
    font-family: var(--FONT-FAMILY);
    font-style: var(--FONT-STYLE);
+}
+#side--icon{
+    width: 55px;
+    height: 50px;
+    color:#8e999b;
+    margin-top: 3rem;
+    transform: translateX(70px);
 }
 
 section{
@@ -221,7 +229,7 @@ article{
 }
 .expenses{
     padding: 0.5rem;
-    margin: 0.8rem  0.2rem  0.5rem  1rem;
+    margin: 1rem  0.2rem  0.5rem  1rem;
     box-shadow: 1px 0px  2px 1px rgb(228, 212, 212);
     width: 44%;
 }
