@@ -7,7 +7,10 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(231, 221, 196);
+   background-image: url(./images/cf904d2f-8520-4715-bb76-53e43346c44a.jpeg);
+}
+header > h1 {
+    color: white;
 }
 :root{
     --FONT-FAMILY : "Playwrite GB S", cursive;
@@ -21,7 +24,7 @@ body{
     top: 0;
     background-color: #131819;
     width: 250px;
-    height: 55rem;
+    height: 66rem;
 }
 .side > h1{
     color: var(--HEADER-COLOR);
@@ -70,10 +73,10 @@ svg{
     color: black;
     background-color: white;
 }
-.compliment{
+.compliment > h4{
     color: var(--HEADER-COLOR);
    text-decoration: wavy;
-   margin-top: 1em;
+   transform: translateY(75px);
    font-family: var(--FONT-FAMILY);
    font-style: var(--FONT-STYLE);
 }
@@ -81,7 +84,7 @@ svg{
     width: 55px;
     height: 50px;
     color:#8e999b;
-    margin-top: 3rem;
+    margin-top: 10rem;
     transform: translateX(70px);
 }
 
@@ -94,19 +97,22 @@ section{
     margin-top: 1.5rem;
  }
 header > h1{
+    color: wheat;
     font-weight: 400;
     word-spacing: 0.5rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 .home--boxes{
-
+ 
     margin-top: 0.5rem;
     display: grid;
     grid-template-columns: repeat(3,2fr);
+    
 }
 .home--box1{
-    background-color: rgb(255, 236, 236);
-    box-shadow: 1px 2px  2px rgb(241, 230, 230);
+   
+    background-color: rgb(59, 57, 54);
+    box-shadow:  0 10px 30px rgba (0, 0 , 1, 0.2) ;
     width: 80%;
     border-radius: 5px;
     color: black;
@@ -114,11 +120,13 @@ header > h1{
 }
 .home--box1 > pre
 {
+    color: wheat;
     font-size: 1.4rem;
     margin-left: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 .home--box1 > h1{
+    color: wheat;
     font-size: 1.5rem;
     margin-left: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -128,14 +136,18 @@ header > h1{
    color: white;
    background-color: black;
 }
-
+.container{
+   display: flex;
+}
 .contents{
     margin-top:1rem;
-   border: 1px solid wheat; 
    width:45%;
-   box-shadow: 1px 1px 2px rgba(213,135,215,0.2);
+   height: fit-content;
+   box-shadow: 5px 2px 1px 0px rgb(17, 17, 17) ;
    border-radius: 10px;
+   background-color: rgb(59, 57, 54);
 }
+
 .head{
     display: flex;
     margin-top:1em;
@@ -144,6 +156,8 @@ header > h1{
 }
 .head > h4,
 .head > p{
+    color: wheat;
+    margin-left: 0.5rem;
     font-size: 0.9rem;
     font-family: var(--FONT-FAMILY);
     font-weight: 500;
@@ -156,25 +170,28 @@ article{
     display:flex;
 }
 .status{
-    display:block;
+    width: 300px;
     margin-right: 1rem;
+    color: wheat;
+    border: 1px solid rgb(46, 43, 43);
     margin-top:2rem;
-    transform:translateX(20px);
-    background-color: rgb(182, 180, 161);
+    margin-left: 2rem;
+    transform: translateY(-10px);
+    background-color: rgb(59, 57, 54);
     border-radius: 15px;
-    box-shadow: 2px 2px 2px rgb(182, 180, 171);
-    width: 50%;
-
+    box-shadow: 1px 1px 2px rgb(39, 39, 38);
 }
 .status > h4{
-    margin-top: 1rem;
-    margin-left:2rem;
+    white-space: nowrap;
+    transform: translateX(20px);
+    transform: translateY(20px);
+    text-align: center;
     font-size: 1.2rem;
     font-family: var(--FONT-FAMILY);
     font-weight: 500;
 }
 .status > p{
-    transform: translateY(-40px);
+    transform: translateY(-20px);
     margin-left: 4rem;
     font-size:1.1rem;
     font-family: var(--FONT-FAMILY);
@@ -186,10 +203,11 @@ article{
 
 }
 .acct--status{
-    transform : translateX(20px);
+    transform : translateX(50px);
     margin-top:0.5rem;
     font-family:var(--FONT-FAMILY);
     display: flex;
+    color: wheat;
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -217,6 +235,7 @@ article{
 .acct--status-2 > h4,
 .acct--status-3 > h4,
 .acct--status-4 > h4{
+    font-size: 12px;
   font-weight:550;
   margin-left:0.5rem;
 }
@@ -224,30 +243,138 @@ article{
 .acct--status-2 > p,
 .acct--status-3 > p,
 .acct--status-4 > p{
-    margin-left:0.5rem;
+    margin-left:0.7rem;
     font-weight:200;
 }
+.budgets{
+    margin-top: 1.5rem;
+    color: wheat;
+    width: 45%;
+    margin-left: 1rem;
+    background-color: rgb(59, 57, 54);
+    box-shadow: 5px 2px 1px 0px rgb(41, 41, 40) ;
+    border-radius: 5px;
+}
+
+.budgets-head{
+    display: flex;
+    gap :18rem;
+    margin-top: 0.4rem;
+    font-family: var(--FONT-FAMILY);
+}
+.budgets-head > h4{
+    margin-left:1rem;   
+}
+.budgets-head > p{
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.budget-body{
+    width: 50%;
+    margin: 2rem  1.5rem  1rem 1.5rem;
+    padding: 5rem;
+    font-family: var(--FONT-FAMILY);
+    border: 10px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(white, white),
+    linear-gradient(to right, cadetblue, firebrick);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    outline: 1px solid rgb(131, 117, 170), 0, 0;
+    outline-offset: -10px;
+}
+.budget-info > h4 {
+    color: black;
+}
+.budget-info > p {
+    transform: translateX(-20px);
+    font-weight: 300;
+    white-space: nowrap;
+    color: black;
+}
+.budget-data{
+    text-align: right;
+    margin-right: 7rem;
+    transform: translateY(-250px);
+    font-family: var(--FONT-FAMILY);
+    font-size: 0.8rem;
+}
+
+/* budget-data{
+    display: flex;
+    flex-direction: column;
+    
+}
+.budget-data-1{
+    top: 2;
+    border-left: 3px solid darkgreen;
+    transform:translateY(-10px);
+}
+.budget-data-2{
+    margin-top: 0.2rem;
+    border-left: 3px solid rgb(14, 14, 17);
+    transform:translateX(-2px);
+    transform: translateY(-4px);
+}
+.budget-data-3{
+    margin-top: 0.2rem;
+    border-left: 3px solid rgb(166, 173, 126);
+    transform: translateY(3px);
+  
+}
+.budget-data-4{
+    margin-top: 0.2rem;
+    position: absolute;
+    border-left: 3px solid firebrick;
+    transform: translateY(6px);
+  
+}
+
+.budget-data-1 > h4,
+.budget-data-2 > h4,
+.budget-data-3 > h4,
+.budget-data-4> h4{
+    font-weight: 200;
+    margin-left: 0.5rem;
+}
+.budget-data-1 > p,
+.budget-data-2 > p,
+.budget-data-3 > p,
+.budget-data-4 > p {
+    margin-left: 0.5rem;
+} */
+
+.container-close{
+    display: flex;
+    gap: 1rem;
+}
 .expenses{
+    transform: translateY(-100px);
+    background-color: rgb(59, 57, 54);
     padding: 0.5rem;
-    margin: 1rem  0.2rem  0.5rem  1rem;
-    box-shadow: 1px 0px  2px 1px rgb(228, 212, 212);
+    color: wheat;
+    margin: 1rem  0.2rem  0.5rem  0.3rem;
+    box-shadow: 5px 5px 15px 0px rgb(20, 20, 19) ;
     width: 44%;
 }
 .expense--head{
     font-family: var(--FONT-FAMILY);
     display: flex;
-    gap: 12rem;
+    gap: 16rem;
+ 
 }
 .expense--head > p{
      margin-top:0.1px ;
      font-size: 0.95rem;
      font-weight: 200;
-     margin-left: 2rem;
+     white-space: nowrap;
 }
 .expense--head-1,
 .expense--head-2,
 .expense--head-3,
-.expense--head-4{
+.expense--head-4,
+.expense--head-5 {
+    white-space: nowrap;
     padding: 1rem;
     width: 100%;
     border-bottom: 1px solid rgb(216, 202, 175);
@@ -255,28 +382,196 @@ article{
     font-family: var(--FONT-FAMILY);
     font-weight: 200;
     display: flex;
-    gap: 12rem;
+    gap: 15rem;
 }
 .expense--head-1 > h4,
 .expense--head-2 > h4,
-.expense--head-3 > h4, 
-.expense--head-4 > h4{
+.expense--head-3 > h4,
+.expense--head-4 > h4,
+.expense--head-5 > h4{
     font-weight: 400;
 }
-.expense--head-1 > p,
-.expense--head-2 > p,
-.expense--head-3 > p,
-.expense--head-4 > p{
+.expense--head-1 > p > span {
+    color: green;
+}
+.expense--head-1 > p ,
+.expense--head-2 > p ,
+.expense--head-3 > p ,
+.expense--head-4 > p ,
+.expense--head-5 > p {
+    white-space: nowrap;
+    font-size:1rem;
     font-weight: 300;
     font-family: sans-serif;
 }
 .expense--head-1:hover,
 .expense--head-2:hover,
 .expense--head-3:hover,
-.expense--head-4:hover{
+.expense--head-4:hover,
+.expense--head-5:hover{
     transition: 0.5s ease-in;
     color: white;
     border-radius: 10px;
     transform: scale(1.1);
     background-color: #131819;
+}
+.expense--head-4 > p > span{
+    color: green;
+}
+.expense--head-3 > p{
+    margin-left: 1.4rem;
+}
+.expense--head-4 > p {
+    margin-left: 0.9rem;
+}
+.expense--head-5 > p {
+    margin-left: 2.2rem;
+}
+.Bills{
+ color: wheat;
+ margin-top: 1rem;
+  font-family: var(--FONT-FAMILY);
+  background-color:rgb(59, 57, 54);;
+  height: 100%;
+  padding: 1rem;
+
+}
+.Bill-head{
+    display: flex;
+  gap:15rem;
+}
+.Bill-1{
+    margin-top: 2rem;
+    display: flex;
+    gap: 18rem;
+    border-left: 3px solid rgb(1, 61, 1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.Bill-2{
+    margin-top: 2rem;
+    display: flex;
+    gap: 15rem;
+    border-left: 3px solid rgb(219, 210, 191);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.Bill-3{
+    margin-top: 2rem;
+    display: flex;
+    gap: 18rem;
+    border-left: 3px solid cadetblue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.Bill-1:hover, :active,
+.Bill-2:hover, :active,
+.Bill-3:hover{
+    transition: 0.5s ease-in;
+    color: white;
+    transform: scale(1.1);
+    background-color: black;   
+}
+
+@media screen and (max-width:768px) {
+   /*  body{
+       
+    } */
+    .side{
+        display: none;
+    }
+    section{
+        margin-left: 0.5rem;
+    }
+    .home--boxes{
+        margin-left: 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .home--box1 {
+        width: 100%;
+    }
+   .container{
+    display: flex;
+    flex-direction: column;
+   }
+   .contents{
+    margin-left: 1rem;
+    width: 105%;
+   }
+   .head{
+     gap: 7em;
+   }
+   article{
+    display: flex;
+    flex-direction: column;
+   }
+   .status{
+    margin-left: 2rem;
+    width: 250px;
+   }
+   .acc{
+    margin-left: 2rem;
+   }
+
+   .budgets{
+    margin-left: 5;
+    width: 100%;
+   }
+   .budgets-head{
+    white-space: nowrap;
+    gap: 6rem;
+   }
+   .budget-info > h4,
+   .budget-info > p {
+    transform: translateX(-35px);
+   }
+   .budget-body{
+    height: 50%;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+   }
+   .container-close{
+    display: flex;
+    flex-direction: column;
+   }
+ .expenses{
+    width: 0;
+    border-radius: 10px;
+    transform: translateY(20px);
+    width: 350px;
+
+ }
+ .expense--head{
+   padding: 1rem;
+  gap: 6rem;
+ }
+ .expense--head-1,
+ .expense--head-2,
+ .expense--head-3,
+ .expense--head-4,
+ .expense--head-5{
+    gap: 5rem;
+ }
+ .Bills{
+    border-radius: 10px;
+    width: 350px;
+    margin-left: 0.2rem;
+ }
+ .Bill-head{
+    white-space: nowrap;
+    gap: 5rem;
+ }
+ .Bill-1{
+    gap: 6rem;
+ }
+ .Bill-2{
+  gap: 2.2rem;
+ }
+ .Bill-3{
+    gap: 6rem;
+ }
 }
